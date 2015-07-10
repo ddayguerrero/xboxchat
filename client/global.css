@@ -117,8 +117,8 @@ body {
   font-weight: 900;
   padding: 0 1rem;
   color: #ffffff;
-  background: #3e313c;
-  border-bottom: 2px solid #372c36;
+  background: #333333;
+  border-bottom: 2px solid #3b3b3b;
   float: left;
   cursor: pointer;
 }
@@ -147,7 +147,7 @@ body {
   width: 220px;
   float: left;
   color: #ab9ba9;
-  background-color: #4d394b;
+  background-color: #000000;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -174,7 +174,7 @@ body {
   margin: 0 1rem .1rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: #ab9ba9;
+  color: #c7c7c7;
   width: 165px;
   position: relative;
 }
@@ -204,7 +204,7 @@ body {
 /* line 35, ../tests/sass/components/_listings.scss */
 .unread {
   color: #ffffff;
-  background: #eb4d5c;
+  background: #107c10;
   border-radius: 9px;
   padding: 2px 9px;
   font-size: .8rem;
@@ -220,7 +220,7 @@ body {
 
 /* line 51, ../tests/sass/components/_listings.scss */
 .channel.active {
-  background: #4c9689;
+  background: #3b3b3b;
 }
 
 /* line 55, ../tests/sass/components/_listings.scss */
@@ -253,7 +253,7 @@ body {
   border-radius: 0.2rem;
   width: 36px;
   height: 36px;
-  background-image: url("http://i.imgur.com/LikUNLc.png");
+  background-image: url("https://images-eds-ssl.xboxlive.com/image?url=7OTVnZUMVj4OV2zUUGecWvn3U00nQQLfK7_kwpANoghRM4m0WF3FOU7SqnTd8QHFQiLdbwDSxMW4K2vf2KnfjBt8ppjf3_fyEY3MyQAsn6.8r55tMLsBWA9pQkZX4Y_doLHWOJgYPfLtZ9RSPk9EjDuNNrg6dYeqqqhAhE9s49k-&format=png&h=64&w=64");
   background-size: cover;
 }
 
@@ -296,8 +296,8 @@ body {
   width: 220px;
   height: 100%;
   cursor: pointer;
-  background: #3e313c;
-  border-top: 2px solid #372c36;
+  background: #333333;
+  border-top: 2px solid #3b3b3b;
   padding: 7px 0 9px 8px;
   height: 4rem;
   position: fixed;
@@ -314,7 +314,7 @@ body {
   border-radius: 0.2rem;
   width: 48px;
   height: 48px;
-  background-image: url("http://i.imgur.com/LikUNLc.png");
+  background-image: url("https://images-eds-ssl.xboxlive.com/image?url=7OTVnZUMVj4OV2zUUGecWvn3U00nQQLfK7_kwpANoghRM4m0WF3FOU7SqnTd8QHFQiLdbwDSxMW4K2vf2KnfjBt8ppjf3_fyEY3MyQAsn6.8r55tMLsBWA9pQkZX4Y_doLHWOJgYPfLtZ9RSPk9EjDuNNrg6dYeqqqhAhE9s49k-&format=png&h=64&w=64");
   background-size: cover;
   margin-right: 8px;
 }
