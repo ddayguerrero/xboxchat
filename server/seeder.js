@@ -1,6 +1,6 @@
 Meteor.startup(function() {
 	Factory.define('message', Messages, {
-		text: function() {
+		chattext: function() {
 			return Fake.sentence();
 		}
 	});
