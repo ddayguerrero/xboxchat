@@ -1,5 +1,5 @@
 // Publish messages server-side.
-Meteor.publish('messages', function () {
+Meteor.publish('messages', function (channel) {
     return Messages.find({channel: channel}); // provides the channel argument in the subscription call.
 });
 

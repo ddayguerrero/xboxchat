@@ -5,6 +5,12 @@ Template.messages.helpers({
 
 Accounts.ui.config({passwordSignupFields: 'USERNAME_AND_EMAIL'});
 
+// Registration - Channel
+Template.registerHelper('currentChannel', function () {
+	return Session.get('channel');
+});
+
+// Registration - Service Username
 Template.registerHelper("usernameFromId", function (userId){
   var user = Meteor.users.findOne({_id: userId});
   if (typeof user === "undefined") {
@@ -20,6 +26,7 @@ Template.registerHelper("usernameFromId", function (userId){
   return user.username;
 });
 
+// Registration - Timestamp
 Template.registerHelper("timestampToTime", function (timestamp) {
     var date = new Date(timestamp);
     var hours = date.getHours();
