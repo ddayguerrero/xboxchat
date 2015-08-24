@@ -1,5 +1,6 @@
 Meteor.startup(function() {
-
+	
+	
 	Factory.define('message', Messages, {
     text: function() {
         return Fake.sentence();
@@ -17,6 +18,8 @@ Meteor.startup(function() {
 			Factory.create('message');
 		});
 	}
+	
+	// Remove All Channels Before Seeding
 	Channels.remove({});
 
 	Channels.insert({
@@ -26,4 +29,5 @@ Meteor.startup(function() {
 	Channels.insert({
 	name: "random"
 	});
+	
 });

@@ -1,6 +1,6 @@
 // Publish messages server-side.
 Meteor.publish('messages', function () {
-    return Messages.find();
+    return Messages.find({channel: channel}); // provides the channel argument in the subscription call.
 });
 
 // Publish usernames server-side.
