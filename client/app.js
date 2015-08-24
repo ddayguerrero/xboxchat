@@ -28,5 +28,9 @@ Template.registerHelper("timestampToTime", function (timestamp) {
     return hours + ':' + minutes.substr(minutes.length-2) + ':' + seconds.substr(seconds.length-2);
 });
 
-Meteor.subscribe('messages');
-Meteor.subscribe('allUsernames');
+Template.listings.helpers({
+	channels: function () {
+		return Channels.find();
+	}
+});
+

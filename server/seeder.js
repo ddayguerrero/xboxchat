@@ -1,8 +1,12 @@
 Meteor.startup(function() {
+
 	Factory.define('message', Messages, {
-		chattext: function() {
-			return Fake.sentence();
-		}
+    text: function() {
+        return Fake.sentence();
+    },
+    user: Meteor.users.findOne()._id,
+    timestamp: Date.now(),
+    channel: 'general'
 	});
 	
 	// Remove All Messages Before Seeding
@@ -13,4 +17,13 @@ Meteor.startup(function() {
 			Factory.create('message');
 		});
 	}
+	Channels.remove({});
+
+	Channels.insert({
+	name: "general"
+	});
+	
+	Channels.insert({
+	name: "random"
+	});
 });
